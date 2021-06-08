@@ -1,0 +1,27 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.register {
+  background-image: url("background.jpg");
+}
+
+.userImage {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 100px;
+  margin:15px;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}

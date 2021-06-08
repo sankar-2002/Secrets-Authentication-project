@@ -1,0 +1,38 @@
+<%# redirected to this page when code fails %>
+
+<%- include('partials/header') %>
+
+<!-- css for this page -->
+
+<style>
+
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+body {
+  background-image: url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.error {
+  padding:50px;
+}
+
+</style>
+
+<div class="container">
+  <h1 class="error">Invalid User Name Or Password</h1>
+
+  <div class="error">
+    <img class="userImage" src="https://www.freeiconspng.com/uploads/error-icon-13.png" alt="error">
+    <h3>No User Found Please Register</h3>
+  </div>
+
+</div>
+
+
+
+<%- include('partials/footer') %>

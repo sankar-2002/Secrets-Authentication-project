@@ -1,0 +1,43 @@
+<%- include('partials/header') %>
+
+
+<!-- css for home page -->
+
+<style>
+body {
+  background-image: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.design {
+  background-image: url('https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.buttons {
+  padding:30px;
+}
+</style>
+
+
+
+<div class="jumbotron centered design">
+
+  <div class="container design">
+    <img  class="userImage" src="https://toppng.com/uploads/preview/user-account-management-logo-user-icon-11562867145a56rus2zwu.png" alt="userimage">
+    <h1 class="display-3">LOGIN PAGE</h1>
+    <h3>Choose Whether To Register Or Login</h3>
+
+    <div class="buttons">
+      <a class="btn btn-light btn-lg" href="/register" role="button">Register</a>
+      <a class="btn btn-dark btn-lg" href="/login" role="button">Login</a>
+    </div>
+    
+  </div>
+
+</div>
+
+<%- include('partials/footer') %>
