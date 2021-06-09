@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const mongoose = require("mongoose");
+
 const md5 = require("md5");
 
 const app = express();
@@ -12,7 +13,9 @@ const app = express();
 //setting the requirements
 
 app.use(express.static("public"));
+
 app.set('view engine', 'ejs');
+
 app.use(bodyParser.urlencoded({
   extended: true
 }));
@@ -67,6 +70,7 @@ app.post("/register", function(req, res) {
   //saving the data of newUser into database and rendering the success page
 
   newUser.save(function(err) {
+
     if(err) {
       console.log(err);
     } else {
